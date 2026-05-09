@@ -1,14 +1,1 @@
 runpod
-numpy==1.24.4
-opencv-python-headless
-Pillow
-scipy
-librosa
-soundfile
-huggingface_hub
-diffusers
-transformers
-accelerate
-omegaconf
-einops
-setuptools
