@@ -22,13 +22,13 @@ RUN apt-get update && apt-get install -y \
 
 RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 1
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.10 1
-RUN python -m pip install --upgrade pip
 
 WORKDIR /app
 
 RUN pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 \
     --index-url https://download.pytorch.org/whl/cu118
 
+RUN pip install --upgrade pip setuptools wheel
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 

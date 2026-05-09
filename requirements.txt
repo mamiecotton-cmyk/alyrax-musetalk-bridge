@@ -1,7 +1,4 @@
 runpod
-torch==2.0.1
-torchvision==0.15.2
-torchaudio==2.0.2
 numpy==1.24.4
 opencv-python-headless
 Pillow
@@ -14,10 +11,4 @@ transformers
 accelerate
 omegaconf
 einops
-mmengine
-mmcv==2.0.1
-mmdet==3.1.0
-mmpose==1.1.0
-gfpgan
-basicsr
-facexlib
+setuptools
